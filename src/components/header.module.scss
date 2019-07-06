@@ -5,6 +5,7 @@
     z-index: 2;
     width: 100%;
     font-family: 'Muli', sans-serif;
+    padding: 1rem;
     .logo {
         height: 36px;
         margin: 0;   
@@ -37,9 +38,10 @@
                 color:#fff;
                 margin-left: 1.5rem;
                 text-decoration: none;
-                font-weight: 700;
+                font-weight: 900;
                 text-transform: uppercase;
                 font-size: 0.85rem;
+                letter-spacing: 2px;
             }
         }
     }

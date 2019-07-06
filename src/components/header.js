@@ -8,7 +8,9 @@ import logo from "../images/logo-stran-fill.svg";
 const Header = ({ siteTitle }) => (
   <header className={headerStyles.header}>
     <div className={headerStyles.headerSubCtn + ' container'}>
-    <img className={headerStyles.logo} src={logo} alt="Logo"  />
+    <Link
+          activeStyle={{ color: "#FFCF00" }}
+          to="/" ><img className={headerStyles.logo} src={logo} alt="Logo"  /></Link>
 
       <ul className={headerStyles.list}>
         <li><Link
@@ -16,10 +18,10 @@ const Header = ({ siteTitle }) => (
           to="/" >Home</Link></li>
         <li><Link
           activeStyle={{ color: "#FFCF00" }}
-          to="/page-2/" >page 2</Link></li>
-        <li><Link
+          to="/appartamento/" >appartamento</Link></li>
+        {/* <li><Link
           activeStyle={{ color: "#FFCF00" }}
-          to="/about/">about</Link></li>
+          to="/about/">about</Link></li> */}
         <li><Link
           activeStyle={{ color: "#FFCF00" }}
           to="/contact/" >contact</Link></li>

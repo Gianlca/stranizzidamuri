@@ -29,9 +29,9 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()}, Casa vacanze Stranizzi d'amuri - P.IVA XXXXXX
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
           </footer>
         </div>
       </>
