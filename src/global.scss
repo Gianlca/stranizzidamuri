@@ -20,6 +20,12 @@ body {
             z-index: 1;
         }     
         .carousel-caption {   
+            top: 60%;
+            bottom: inherit;
+            z-index: 1;
+            @include media-breakpoint-down(sm) { 
+                top: 30%;
+            }
             h1 {
                 position: relative;
                 z-index: 1;
@@ -29,6 +35,9 @@ body {
                 margin: 0;
                 margin-bottom: 0.5rem;
                 letter-spacing: 1px;
+                @include media-breakpoint-down(sm) { 
+                    font-size: 1.5rem;
+                }
             }
             p {
                 position: relative;
@@ -37,17 +46,21 @@ body {
                 font-size: 2rem;
                 margin: 0;
                 font-weight: 600;
+                @include media-breakpoint-down(sm) { 
+                    font-size: 1.5rem;
+                }
             }
         }
-        .carousel-caption {
-            top: 60%;
-            bottom: inherit;
-            z-index: 1;
-        }
+
         .carousel-indicators li {
             width: 10px;
             height: 10px;
             border-radius: 100%;
+          }
+          .gatsby-image-wrapper div {
+            @include media-breakpoint-down(sm) { 
+                padding-bottom: 100% !important;
+            }
           }
     }        
     .section {
@@ -63,6 +76,11 @@ body {
         .central-container {
             margin-bottom: 2rem
         }
+        .item {
+            @include media-breakpoint-down(sm) { 
+               margin-bottom: 2rem;
+            }            
+        }
         .img-container {
             display: flex;
             justify-content: center;
@@ -74,6 +92,7 @@ body {
             }
             img {
                 max-width: 100px;
+                max-height: 100px;
             }
         }
     }

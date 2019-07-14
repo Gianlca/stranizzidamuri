@@ -1,16 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Img from "gatsby-image";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Splash from "../images/gatsby-astronaut.png";
+import Apartment from "../images/apartment.jpg";
+import apartmentStyles from './apartment.scss'
+
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <img src={Splash} alt="" />   
+    <div className="page-title">
+      <div className="container">
+        <h1 className="page-title-heading">L'appartamento</h1>
+      </div>
+    </div>
+    {/* <img src={Apartment} alt="" />   
     <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <p>Welcome to page 2</p> */}
+    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )
 

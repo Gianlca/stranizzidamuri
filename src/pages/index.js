@@ -1,7 +1,6 @@
 import React from "react"
-import Img from "gatsby-image"
+import Img from "gatsby-image";
 import Carousel from 'react-bootstrap/Carousel';
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import '../global.scss';
@@ -66,34 +65,37 @@ const IndexPage = (props) => (
       </div>
     </section>     */}
     <section  style={{ background: `#eeeef0`}} className="section">
-    <div className="container">
-    <div className="row" style={{ alignItems: `center`}}>
-    <div className="col-md-12">
-      <div className="clearfix">
-        <div className="text-center central-container">
-            <h3 className="title title-heading">Key Features</h3>
-        <div className="addon-content">This template framework has predefined features and options that you can use for faster template development.It is extremely simple and ready to use just after the installation.</div></div></div></div>  
-    <div className="col-md-4 text-center" >
-    <span className="img-container ">  
-      <img src={Parks} alt="Parks" />
-    </span>
-    <h3>Parcheggio</h3>
-    Possibilità di parcheggio in strada
-</div>
-    <div className="col-md-4 text-center">
-    <span className="img-container">    
-      <img src={Wifi} alt="Wifi" />
-    </span>
-    <h3> Internet</h3>
-    Gratis! Internet WiFi disponibile gratuitamente in tutta la struttura.</div>
-    <div className="col-md-4 text-center">
-    <span className="img-container">      
-      <img src={Pets} alt="Pets" />
-    </span>
-    <h3>Pets</h3>
-    Animali ammessi. Potrebbe essere richiesto un supplemento</div>
+        <div className="container">
+        <div className="row" style={{ alignItems: `center`}}>
+        <div className="col-md-12">
+          <div className="clearfix">
+            <div className="text-center central-container">
+                <h3 className="title title-heading">Caratteristiche principali</h3>
+            {/* <div className="addon-content">This template framework has predefined features and options that you can use for faster template development.It is extremely simple and ready to use just after the installation.</div> */}
+            </div>
+            </div>
+            </div>  
+        <div className="col-md-4 text-center item" >
+        <span className="img-container ">  
+          <img src={Parks} alt="Parks" />
+        </span>
+        <h3>Parcheggio</h3>
+        Possibilità di parcheggio in strada
     </div>
-    </div>
+        <div className="col-md-4 text-center item">
+        <span className="img-container">    
+          <img src={Wifi} alt="Wifi" />
+        </span>
+        <h3> Internet</h3>
+        Gratis! Internet WiFi disponibile gratuitamente in tutta la struttura.</div>
+        <div className="col-md-4 text-center item">
+        <span className="img-container">      
+          <img src={Pets} alt="Pets" />
+        </span>
+        <h3>Pets</h3>
+        Animali ammessi. Potrebbe essere richiesto un supplemento</div>
+        </div>
+        </div>
     </section>
     <section className="section">
     <div className="container">
@@ -115,7 +117,7 @@ const IndexPage = (props) => (
     </div>
     <div className="container">
       <div className="row text-center">
-        <div className="col-md-4">
+        <div className="col-md-4 item">
           <div className="addon-content text-center">
             <span className="img-container">
               <img src={Monuments} alt="Monuments" />
@@ -125,7 +127,7 @@ const IndexPage = (props) => (
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 item">
           <div className="addon-content text-center">
             <span className="img-container">
             <img src={Menu} alt="Menu" />
@@ -135,7 +137,7 @@ const IndexPage = (props) => (
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 item">
           <div className="addon-content text-center">
             <span className="img-container">
               <img src={Route} alt="Route" />

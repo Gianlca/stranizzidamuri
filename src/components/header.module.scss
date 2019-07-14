@@ -1,11 +1,23 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 .header {
-    background: rgba(44, 44, 44,0.9);
     position: fixed;
     top: 0;
     z-index: 2;
     width: 100%;
     font-family: 'Muli', sans-serif;
-    padding: 1rem;
+    transition: all ease-out .3s;
+    @include media-breakpoint-up(md) { 
+        padding: 1rem;
+        background: none;
+    }   
+    @include media-breakpoint-up(xs) { 
+        background-color: rgba(0,0,0,0.85);
+    }      
+    .toggler {
+        background: #fff;
+    }  
     .logo {
         height: 36px;
         margin: 0;   
@@ -17,7 +29,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 4rem;
+        @include media-breakpoint-up(md) { 
+            height: 4rem;
+        }
     }
     .header-logo {
         margin: 0 auto;
@@ -40,9 +54,14 @@
                 text-decoration: none;
                 font-weight: 900;
                 text-transform: uppercase;
-                font-size: 0.85rem;
+                font-size: 0.75rem;
                 letter-spacing: 2px;
             }
         }
     }
+}
+
+.scrolled {
+    background-color: rgba(0,0,0,0.85);
+    padding: 0;
 }
