@@ -21,14 +21,14 @@ const IndexPage = (props) => (
         <Carousel.Item>
         <Img fluid={props.data.imageOne.childImageSharp.fluid} />
           <Carousel.Caption>
-            <h1>Casa vacanze Stranizzi d'amuri</h1>
+            <h1>Casa vacanze Stranizza d'amuri</h1>
             <p>LA TUA VACANZA A PALERMO INIZIA QUI</p>
           </Carousel.Caption>          
         </Carousel.Item>  
         <Carousel.Item>
         <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
           <Carousel.Caption>
-            <h1>Casa vacanze Stranizzi d'amuri</h1>
+            <h1>Casa vacanze Stranizza d'amuri</h1>
             <p>LA TUA VACANZA A PALERMO INIZIA QUI</p>
           </Carousel.Caption>                   
         </Carousel.Item>                   
@@ -44,7 +44,7 @@ const IndexPage = (props) => (
         </div>
         <div className="col-md-6">
         <h2>Confort nel cuore di PALERMO</h2>
-          <p>La casa vacanza "Stranizzi d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
+          <p>La casa vacanza "Stranizza d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
           <p>il Capo. l'appartamento è confortevole e ottimamente arredato e corredato per offrire agli ospiti una piacevole permanenza.</p>
         </div>
       </div>
@@ -55,7 +55,7 @@ const IndexPage = (props) => (
      <div className="row" style={{ alignItems: `center`}}>
       <div className="col-md-6">
       <h2>Confort nel cuore di PALERMO</h2>
-        <p>La casa vacanza "Stranizzi d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
+        <p>La casa vacanza "Stranizza d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
         <p>il Capo. l'appartamento è confortevole e ottimamente arredato e corredato per offrire agli ospiti una piacevole permanenza.</p>
       </div>
       <div className="col-md-6">
@@ -102,7 +102,7 @@ const IndexPage = (props) => (
      <div className="row" style={{ alignItems: `center`}}>
       <div className="col-md-6">
       <h2>Confort nel cuore di PALERMO</h2>
-        <p>La casa vacanza "Stranizzi d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
+        <p>La casa vacanza "Stranizza d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
         <p>il Capo. l'appartamento è confortevole e ottimamente arredato e corredato per offrire agli ospiti una piacevole permanenza.</p>
       </div>
       <div className="col-md-6">

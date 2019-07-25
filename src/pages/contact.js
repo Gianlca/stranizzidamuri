@@ -10,10 +10,12 @@ export default () => (
     <SEO title="Contact" />    
     <div className="page-title">
       <div className="container">
-        <h1 className="page-title-heading">CONTATTI</h1>
+        {/* <h1 className="page-title-heading">CONTATTI</h1> */}
       </div>
     </div>
+    <h1 className="main_title_in">Contatti</h1>    
     <div style={{ marginTop: `1rem`, marginBottom: `1rem` }} className="container">
+
     <div className="row">
       <div className="col-md-6">
         <h3>Mettiti in contatto! </h3>
@@ -22,7 +24,7 @@ export default () => (
         <p>info@XXXX.com</p>
       </div>
       <div className="col-md-6">
-        
+      <div class="box_style_1"> 
         <form name="Contact Form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p style={{display: `none`}}>
             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -40,8 +42,9 @@ export default () => (
             <label htmlFor="exampleFormControlTextarea1">Message:</label>
             <textarea className="form-control" id="exampleFormControlTextarea1" name="message" />
           </div>
-          <button type="submit" className="btn btn-primary">Send</button>
+          <button type="submit" className="btn btn-primary btnSend">Send</button>
         </form>
+        </div>
       </div>
       </div>
       

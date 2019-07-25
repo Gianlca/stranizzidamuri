@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,700,900|BioRhyme|Courgette&display=swap);
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+@import url("icon_set_1.css");
+@import url("icon_set_2.css");	
 html {
     font-family: 'Muli', sans-serif;
 } 
@@ -91,8 +93,8 @@ body {
                 margin-bottom: 1rem;
             }
             img {
-                max-width: 100px;
-                max-height: 100px;
+                max-width: 5rem;
+                max-height: 5rem;
             }
         }
     }

@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
+import { Link, StaticQuery  } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
 import headerStyles from './header.module.scss'
-import logo from "../images/logo-stran-fill.svg";
+import logo from "../images/logo-stranizza.svg";
 import cx from "classnames";
 
 class Header extends React.Component {
@@ -13,15 +13,20 @@ class Header extends React.Component {
       super(props)
       this.state = {
         collapsed: true,
+        titlePage:''
       };
     }
 
     componentDidMount() {
+      this.setState({
+        titlePage: this.props.children[0].props.title
+      });
       window.addEventListener('scroll',() => {
         let checkScroll = window.scrollY;
         if (checkScroll == 0) {
           this.setState({
             collapsed: true,
+            titlePage: this.props.children[0].props.title
           });
         } else {
           this.setState({
@@ -33,8 +38,10 @@ class Header extends React.Component {
 
   render() {
       const classScroll = this.state.collapsed ? headerStyles.header :  cx(headerStyles.header, headerStyles.scrolled);
-      return(
-        <header className={classScroll}>       
+      const home = this.state.titlePage === 'Home' ? headerStyles.home : headerStyles.header
+      return (
+                
+        <header className={classScroll + ' ' + home}>      
         <Navbar className={headerStyles.headerSubCtn} expand="lg" className="container"> 
         <Navbar.Brand>
             <Link to="/"><img className={headerStyles.logo} src={logo} alt="Logo"  /></Link>
@@ -52,9 +59,8 @@ class Header extends React.Component {
             </Navbar.Collapse> 
           </Navbar>
       </header>        
-      )    
+    )
   }
-    
 }
 
 // const Header = ({ siteTitle }) => (
@@ -84,6 +90,7 @@ class Header extends React.Component {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  
 }
 
 Header.defaultProps = {
