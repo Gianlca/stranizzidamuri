@@ -101,9 +101,9 @@ const IndexPage = (props) => (
     <div className="container">
      <div className="row" style={{ alignItems: `center`}}>
       <div className="col-md-6">
-      <h2>Confort nel cuore di PALERMO</h2>
-        <p>La casa vacanza "Stranizza d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p>
-        <p>il Capo. l'appartamento è confortevole e ottimamente arredato e corredato per offrire agli ospiti una piacevole permanenza.</p>
+      {/* <h2>Confort nel cuore di PALERMO</h2> */}
+        {/* <p>La casa vacanza "Stranizza d'amuri" è un omaggio alla sicilianità, è situata nel centro di Palermo, in un quartiere vivo e popolare: </p> */}
+        <p>Tutti i monumenti e le bellezze cittadine si trovano a pochi passi: Piazza Pretoria, Piazza Bellini, la Martorana, la Cattedrale, Piazza della Vittoria, il Palazzo Reale e la Cappella Palatina, Porta Nuova a sud e Porta Felice a Nord, il glorioso Teatro Massimo ed il teatro Politeama e per finire i mercati cittadini del Capo, della Vucciria e di Ballarò.</p>
       </div>
       <div className="col-md-6">
       <Img fluid={props.data.imageFourth.childImageSharp.fluid} />
@@ -158,16 +158,16 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "home-splash.jpg" }) {
+    imageOne: file(relativePath: { eq: "NewSplash.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1075,  maxHeight: 550 ) {
+        fluid(maxWidth: 1583,  maxHeight: 812 ) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "home-splash2.jpg" }) {
+    imageTwo: file(relativePath: { eq: "NewSplash2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1075,  maxHeight: 550 ) {
+        fluid(maxWidth: 1583,  maxHeight: 812 ) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -179,7 +179,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    imageFourth: file(relativePath: { eq: "first-image.jpg" }) {
+    imageFourth: file(relativePath: { eq: "home-2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 665 ) {
           ...GatsbyImageSharpFluid

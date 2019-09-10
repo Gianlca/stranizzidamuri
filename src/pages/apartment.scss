@@ -18,7 +18,7 @@
   }
 }
 .owl-theme {
-  margin-top: 4.4rem;
+  margin-top: 4.2rem;
 }
 
 .caption {
@@ -50,6 +50,7 @@ h1.main_title_in {
 	display:flex;
 	border-bottom:1px solid #ededed;
   font-size:13px;
+  justify-content: space-between;
   li{
     text-align: center;
     &:last-child{
@@ -104,5 +105,10 @@ h1.main_title_in {
     width: 100%;
     background: rgb(255, 207, 0);
     border: 0;
+  }
+}
+#sidebar {
+  h3 {
+    margin: 30px 0; text-align: center;
   }
 }

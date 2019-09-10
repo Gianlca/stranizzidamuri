@@ -59,31 +59,31 @@ class SecondPage extends React.Component {
             <div className="item">
               <Img fluid={this.props.data.imageOne.childImageSharp.fluid} />
               <div className="caption">
-                <h3>Fantastic bed room</h3>
+                <h3>Fantastic living room</h3>
               </div>
             </div>
             <div className="item">
-              <Img fluid={this.props.data.imageOne.childImageSharp.fluid} />
+              <Img fluid={this.props.data.imageTwo.childImageSharp.fluid} />
+              <div className="caption">
+                <h3>Well furnished</h3>
+              </div>
+            </div>
+            <div className="item">
+              <Img fluid={this.props.data.imageThree.childImageSharp.fluid} />
+              <div className="caption">
+                <h3>Nice kicthen</h3>
+              </div>
+            </div>
+            <div className="item">
+              <Img fluid={this.props.data.imageFourth.childImageSharp.fluid} />
               <div className="caption">
                 <h3>Equiped bathroom</h3>
               </div>
             </div>
             <div className="item">
-              <Img fluid={this.props.data.imageOne.childImageSharp.fluid} />
+              <Img fluid={this.props.data.imageFiveth.childImageSharp.fluid} />
               <div className="caption">
-                <h3>Equiped bathroom</h3>
-              </div>
-            </div>
-            <div className="item">
-              <Img fluid={this.props.data.imageOne.childImageSharp.fluid} />
-              <div className="caption">
-                <h3>Nice outdoor</h3>
-              </div>
-            </div>
-            <div className="item">
-              <Img fluid={this.props.data.imageOne.childImageSharp.fluid} />
-              <div className="caption">
-                <h3>Swimming pool</h3>
+                <h3>Lovely bedroom</h3>
               </div>
             </div>
           </OwlCarousel>
@@ -169,6 +169,7 @@ class SecondPage extends React.Component {
               </div>
             </div>
             <div class="col-md-4" id="sidebar">
+              <h3>Invia una richiesta</h3>
               <div class="box_style_1">
                 <div id="message-booking">
                   <form
@@ -236,37 +237,37 @@ export default SecondPage
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "carousel-1.jpg" }) {
+    imageOne: file(relativePath: { eq: "NiceLiving.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageTwo: file(relativePath: { eq: "home-splash2.jpg" }) {
+    imageTwo: file(relativePath: { eq: "ArtDesign.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1075, maxHeight: 550) {
+        fluid(maxWidth: 1000, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageThree: file(relativePath: { eq: "home1-image.jpg" }) {
+    imageThree: file(relativePath: { eq: "NiceKitchen.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 665) {
+        fluid(maxWidth: 1000, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageFourth: file(relativePath: { eq: "first-image.jpg" }) {
+    imageFourth: file(relativePath: { eq: "EquipedBath.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 665) {
+        fluid(maxWidth: 1000, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageFiveth: file(relativePath: { eq: "bus.svg" }) {
+    imageFiveth: file(relativePath: { eq: "FantasticBedRoom.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 665) {
+        fluid(maxWidth: 1000, maxHeight: 600) {
           ...GatsbyImageSharpFluid
         }
       }

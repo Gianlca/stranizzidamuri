@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Casa vacanze Stranizzi d'amuri`,
-    description: `Casa vacanze Stranizzi d'amuri. La tua vacanza a Palermo inizia da qui`,
+    title: `Casa vacanze Stranizza d'amuri`,
+    description: `Casa vacanze Stranizza d'amuri. La tua vacanza a Palermo inizia da qui`,
     author: `@8cinask`,
   },
   plugins: [
