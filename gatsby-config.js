@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Casa vacanze Stranizza d'amuri`,
-    description: `Casa vacanze Stranizza d'amuri. La tua vacanza a Palermo inizia da qui`,
+    title: `Casa vacanze B&B in centro a Palermo per visitare monumenti`,
+    description: `Stranizza d'amuri. La tua vacanza a Palermo in centro storico vicina a tutti i monumenti. Ristrutturata e moderna`,
     author: `@8cinask`,
   },
   plugins: [

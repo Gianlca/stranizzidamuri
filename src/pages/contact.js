@@ -19,9 +19,10 @@ export default () => (
     <div className="row">
       <div className="col-md-6">
         <h3>Mettiti in contatto! </h3>
-        <p> 8 Via Trappetaro, Monte di Pietà, 90134 Palermo, Italia </p>
-        <p> +39 329 XXXX</p>
-        <p>info@XXXX.com</p>
+        <p> Via Trappetaro 8, Monte di Pietà, 90134 Palermo, Italia</p>
+        <p>Per informazioni o prenotazioni: </p>
+        <p> Luigi +39 347 4400347</p>
+        <p>Manuela +39 320 0246796</p>
       </div>
       <div className="col-md-6">
       <div class="box_style_1"> 
@@ -31,18 +32,18 @@ export default () => (
           </p>          
           <input type="hidden" name="form-name" value="Contact Form" />
           <div  className="form-group">
-            <label htmlFor="InputName">Your Name</label>
-            <input type="text" name="name" id="InputName" className="form-control"  placeholder="Enter your name"/>
+            <label htmlFor="InputName">Nome e Cognome</label>
+            <input type="text" name="name" id="InputName" className="form-control"  placeholder="Inserisci il tuo nome e cognome"/>
           </div>          
           <div  className="form-group">
-            <label htmlFor="InputEmail">Email address</label>
-            <input type="email" name="email" id="InputEmail" className="form-control"  placeholder="Enter email"/>
+            <label htmlFor="InputEmail">Email</label>
+            <input type="email" name="email" id="InputEmail" className="form-control"  placeholder="Inserisci la tua email"/>
           </div>
           <div  className="form-group">
-            <label htmlFor="exampleFormControlTextarea1">Message:</label>
+            <label htmlFor="exampleFormControlTextarea1">Messaggio</label>
             <textarea className="form-control" id="exampleFormControlTextarea1" name="message" />
           </div>
-          <button type="submit" className="btn btn-primary btnSend">Send</button>
+          <button type="submit" className="btn btn-primary btnSend">Invia</button>
         </form>
         </div>
       </div>
