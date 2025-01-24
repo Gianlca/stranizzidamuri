@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
           <footer>
             © {new Date().getFullYear()}, Casa vacanze Stranizzi d'amuri 
             {` `}
-            {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
+            {`CIN: `}
           </footer>
         </div>
       </>
